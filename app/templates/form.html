@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <h1>Submit New Request</h1>
+    <form>
+        Subject: <label><input type="text" id="subject" name="subject"></label><br>
+        Description: <label><input type="text" id="description" name="description"></label><br>
+        Attachments: <label><input type="file" id="attachments" name="attachments"></label>
+    </form>
+
+    <br>
+    <button onclick="processRequest()">Submit request</button>
+
+    <p id="displayRequest"></p>
+</body>
+</html>
