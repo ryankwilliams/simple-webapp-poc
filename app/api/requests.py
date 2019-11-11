@@ -13,6 +13,8 @@ blueprint = Blueprint(
 @blueprint.route("/create", methods=["POST"])
 @cross_origin()
 def create():
+    # http -f POST http://0.0.0.0:8081/app/api/v1/requests/create \
+    # subject=subject description=description attachments@file.txt
     subject = request.form['subject']
     description = request.form['description']
     attachments = request.files.getlist("attachments")
