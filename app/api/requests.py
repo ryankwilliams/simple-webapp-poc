@@ -20,4 +20,4 @@ def create():
     for file in attachments:
         file.save(f"/tmp/{file.filename}")
 
-    return f"Request: {subject}:{description} added!"
+    return f"Your request has been created!"
