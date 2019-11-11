@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
-    <script src="../js/main.js"></script>
+    <!-- flask support for render_templates -->
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+    <!-- HTML standard support -->
+    <script src="../static/js/main.js"></script>
 </head>
 <body>
     <h1>Submit New Request</h1>

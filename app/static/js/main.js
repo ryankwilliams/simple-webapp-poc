@@ -5,7 +5,7 @@ function processRequest() {
     let numOfAttachments = document.getElementById("attachments").files.length;
 
     xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("POST", "http://0.0.0.0:8081/requests/new", true);
+    xmlHttp.open("POST", "http://0.0.0.0:8081/app/api/v1/requests/create", true);
     xmlHttp.onload = function() {
         document.getElementById("displayRequest").innerHTML = this.responseText;
     };
