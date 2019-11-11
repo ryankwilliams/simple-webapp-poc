@@ -28,4 +28,4 @@ EXPOSE 8081
 CMD gunicorn -w 1 -b 0.0.0.0:8081 --capture-output \
     --log-file ${APP_DIR}/logs/output.log \
     --access-logfile ${APP_DIR}/logs/access.log \
-    wsgi:app
+    wsgi:app && nginx -g 'daemon off;'
